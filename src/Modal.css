@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+.modal.is-open {
+  display: flex;
+}
+.modal-container {
+  z-index: 2500;
+  position: relative;
+  padding: 1rem;
+  min-width: 320px;
+  max-width: 480px;
+  background-color: #ffffff;
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+.modal-container > img {
+  object-fit: scale-down;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
